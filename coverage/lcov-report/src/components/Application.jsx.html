@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/hooks/useApplicationData.js</title>
+    <title>Code coverage report for src/components/Application.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/hooks</a> useApplicationData.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> Application.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
@@ -137,24 +137,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -164,17 +146,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -189,68 +171,86 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useReducer, useEffect } from "react";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
+  getAppointmentsForDay,
+  getInterviewersForDay,
+  getInterview
+} from "../helpers/selectors";
 &nbsp;
-import axios from "axios";
+import useApplicationData from "../hooks/useApplicationData";
 &nbsp;
-import reducer, {
-  SET_DAY,
-  SET_APPLICATION_DATA,
-  SET_INTERVIEW
-} from "../reducers/application";
+import "./Application.scss";
 &nbsp;
-export default function <span class="fstat-no" title="function not covered" >useApplicationData(</span>) {
-  const [state, dispatch] = <span class="cstat-no" title="statement not covered" >useReducer(reducer, {</span>
-    day: "Monday",
-    days: [],
-    appointments: {},
-    interviewers: {}
-  });
+import DayList from "./DayList";
+import Appointment from "./Appointment";
 &nbsp;
-  const setDay = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >da</span>y =&gt; <span class="cstat-no" title="statement not covered" >dispatch({ type: SET_DAY, day });</span></span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    Promise.all([</span>
-      axios.get("/api/days"),
-      axios.get("/api/appointments"),
-      axios.get("/api/interviewers")
-    ]).then(
-<span class="fstat-no" title="function not covered" >      ([</span>{ data: days }, { data: appointments }, { data: interviewers }]) =&gt;
-<span class="cstat-no" title="statement not covered" >        dispatch({</span>
-          type: SET_APPLICATION_DATA,
-          days,
-          appointments,
-          interviewers
-        })
-    );
-  }, []);
-&nbsp;
-  function <span class="fstat-no" title="function not covered" >bookInterview(</span>id, interview) {
-<span class="cstat-no" title="statement not covered" >    return axios.put(`/api/appointments/${id}`, { interview }).then(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      dispatch({</span>
-        type: SET_INTERVIEW,
-        id,
-        interview
-      });
-    });
-  }
-&nbsp;
-  function <span class="fstat-no" title="function not covered" >cancelInterview(</span>id) {
-<span class="cstat-no" title="statement not covered" >    return axios.delete(`/api/appointments/${id}`).then(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      dispatch({</span>
-        type: SET_INTERVIEW,
-        id,
-        interview: null
-      });
-    });
-  }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export default function <span class="fstat-no" title="function not covered" >Application(</span>props) {
+  const {
     state,
     setDay,
     bookInterview,
     cancelInterview
-  };
+  } = <span class="cstat-no" title="statement not covered" >useApplicationData();</span>
+&nbsp;
+  const interviewers = <span class="cstat-no" title="statement not covered" >getInterviewersForDay(state, state.day);</span>
+&nbsp;
+  const appointments = <span class="cstat-no" title="statement not covered" >getAppointmentsForDay(state, state.day).map(</span>
+<span class="fstat-no" title="function not covered" >    ap</span>pointment =&gt; {
+<span class="cstat-no" title="statement not covered" >      return (</span>
+        &lt;Appointment
+          key={appointment.id}
+          {...appointment}
+          interview={getInterview(state, appointment.interview)}
+          interviewers={interviewers}
+          bookInterview={bookInterview}
+          cancelInterview={cancelInterview}
+        /&gt;
+      );
+    }
+  );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;main className="layout"&gt;
+      &lt;section className="sidebar"&gt;
+        &lt;img
+          className="sidebar--centered"
+          src="images/logo.png"
+          alt="Interview Scheduler"
+        /&gt;
+        &lt;hr className="sidebar__separator sidebar--centered" /&gt;
+        &lt;nav className="sidebar__menu"&gt;
+          &lt;DayList days={state.days} day={state.day} setDay={setDay} /&gt;
+        &lt;/nav&gt;
+        &lt;img
+          className="sidebar__lhl sidebar--centered"
+          src="images/lhl.png"
+          alt="Lighthouse Labs"
+        /&gt;
+      &lt;/section&gt;
+      &lt;section className="schedule"&gt;
+        {appointments}
+        &lt;Appointment key="last" time="5pm" /&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  );
 }
 &nbsp;</pre></td></tr></table></pre>
 

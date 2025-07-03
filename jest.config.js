@@ -5,6 +5,7 @@ export default {
   testEnvironment: "jsdom",
   collectCoverageFrom: [
     "src/**/*.js",
+    "src/**/*.jsx",
     "!src/index.js"
   ],
   watchPathIgnorePatterns: [
