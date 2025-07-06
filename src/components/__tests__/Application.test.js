@@ -2,9 +2,12 @@
 //  The render function allows us to render Components
 import {
   getAllByTestId,
+  fireEvent,
+  getByAltText,
+  getByPlaceholderText,
   queryByText,
   render,
-  getyByText,
+  getByText,
   findByText,
   prettyDOM
 } from "@testing-library/react";
@@ -46,12 +49,14 @@ describe("Appointment", () => {
 
 describe("Application", () => {
   it("loads data, books an interview and reduces the spots remaining for Monday by 1", async () => {
-    const { container } = render(<Application />);
+    const { container, debug } = render(<Application />);
+
+    await findByText(container, "Archie Cohen");
 
     const appointment = getAllByTestId(container, "appointment")[0];
     console.log(prettyDOM(appointment));
 
-    ireEvent.click(getByAltText(appointment, "Add"));
+    fireEvent.click(getByAltText(appointment, "Add"));
 
     fireEvent.change(getByPlaceholderText(appointment, /enter student name/i), {
       target: { value: "Lydia Miller-Jones" }
@@ -59,9 +64,12 @@ describe("Application", () => {
     fireEvent.click(getByAltText(appointment, "Sylvia Palmer"));
 
     fireEvent.click(getByText(appointment, "Save"));
+
+    expect(getByText(appointment, "Saving")).toBeInTheDocument();
+
+    debug();
   });
 
-  
 });
 
 

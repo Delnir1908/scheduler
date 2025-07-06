@@ -4,6 +4,7 @@ import Header from "./Header";
 import Empty from "./Empty";
 import Show from "./Show";
 import Form from "./Form";
+import Status from "./Status";
 import useVisualMode from "../../hooks/useVisualMode";
 
 export default function Appointment(props) {
