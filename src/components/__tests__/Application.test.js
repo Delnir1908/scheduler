@@ -9,6 +9,7 @@ import {
   render,
   getByText,
   findByText,
+  waitForElementToBeRemoved,
   prettyDOM
 } from "@testing-library/react";
 
@@ -67,7 +68,12 @@ describe("Application", () => {
 
     expect(getByText(appointment, "Saving")).toBeInTheDocument();
 
-    debug();
+    await findByText(appointment, "Lydia Miller-Jones");
+
+    const day = getAllByTestId(container, "day").find((day) => queryByText(day, "Monday"));
+
+    expect(getByText(day, "no spots remaining")).not.toBeInTheDocument();
+
   });
 
 });
