@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1751847573237" clover="3.2.0">
-  <project timestamp="1751847573237" name="All files">
-    <metrics statements="117" coveredstatements="94" conditionals="63" coveredconditionals="51" methods="61" coveredmethods="46" elements="241" coveredelements="191" complexity="0" loc="117" ncloc="117" packages="6" files="21" classes="21"/>
+<coverage generated="1751855279487" clover="3.2.0">
+  <project timestamp="1751855279487" name="All files">
+    <metrics statements="119" coveredstatements="106" conditionals="63" coveredconditionals="58" methods="63" coveredmethods="56" elements="245" coveredelements="220" complexity="0" loc="119" ncloc="119" packages="6" files="21" classes="21"/>
     <package name="src">
       <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="main.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/main.jsx">
@@ -14,148 +14,150 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="23" coveredstatements="21" conditionals="6" coveredconditionals="5" methods="12" coveredmethods="11"/>
+      <metrics statements="23" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="11"/>
       <file name="Application.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Application.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="39" count="3" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="24" count="13" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="39" count="13" type="stmt"/>
       </file>
       <file name="Button.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Button.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="35" type="stmt"/>
-        <line num="11" count="35" type="stmt"/>
+        <line num="6" count="49" type="stmt"/>
+        <line num="11" count="49" type="stmt"/>
       </file>
       <file name="DayList.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/DayList.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
       </file>
       <file name="DayListItem.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/DayListItem.jsx">
-        <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="2"/>
-        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
+        <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
+        <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="18" count="16" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
       </file>
       <file name="InterviewerList.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/InterviewerList.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="7" count="17" type="stmt"/>
-        <line num="8" count="20" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="20" count="17" type="stmt"/>
+        <line num="7" count="22" type="stmt"/>
+        <line num="8" count="30" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="20" count="22" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
       </file>
       <file name="InterviewerListItem.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/InterviewerListItem.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="6" count="20" type="stmt"/>
-        <line num="10" count="20" type="stmt"/>
+        <line num="6" count="30" type="stmt"/>
+        <line num="10" count="30" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Appointment">
-      <metrics statements="45" coveredstatements="37" conditionals="30" coveredconditionals="25" methods="20" coveredmethods="13"/>
+      <metrics statements="47" coveredstatements="46" conditionals="30" coveredconditionals="30" methods="22" coveredmethods="21"/>
       <file name="Confirm.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Confirm.jsx">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
       </file>
       <file name="Empty.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Empty.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="6" type="stmt"/>
+        <line num="2" count="23" type="stmt"/>
       </file>
       <file name="Error.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Error.jsx">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
       </file>
       <file name="Form.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Form.jsx">
         <metrics statements="18" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="5"/>
-        <line num="7" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="17" type="stmt"/>
+        <line num="7" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="22" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="22" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="8" type="cond" truecount="2" falsecount="0"/>
         <line num="23" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="27" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="2" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="36" count="17" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="36" count="22" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="47" count="3" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
       </file>
       <file name="Header.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Header.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="11" type="stmt"/>
+        <line num="2" count="43" type="stmt"/>
       </file>
       <file name="Show.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Show.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="2" count="3" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
       </file>
       <file name="Status.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/Status.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
       </file>
       <file name="index.jsx" path="/Users/jasonchen/lighthouse/scheduler/src/components/Appointment/index.jsx">
-        <metrics statements="21" coveredstatements="16" conditionals="20" coveredconditionals="15" methods="8" coveredmethods="4"/>
-        <line num="14" count="11" type="stmt"/>
-        <line num="15" count="11" type="stmt"/>
-        <line num="16" count="11" type="stmt"/>
-        <line num="17" count="11" type="stmt"/>
-        <line num="18" count="11" type="stmt"/>
-        <line num="19" count="11" type="stmt"/>
-        <line num="20" count="11" type="stmt"/>
-        <line num="21" count="11" type="stmt"/>
-        <line num="22" count="11" type="stmt"/>
-        <line num="24" count="11" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="51" count="11" type="stmt"/>
-        <line num="54" count="1" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="23" coveredstatements="23" conditionals="20" coveredconditionals="20" methods="10" coveredmethods="10"/>
+        <line num="14" count="43" type="stmt"/>
+        <line num="15" count="43" type="stmt"/>
+        <line num="16" count="43" type="stmt"/>
+        <line num="17" count="43" type="stmt"/>
+        <line num="18" count="43" type="stmt"/>
+        <line num="19" count="43" type="stmt"/>
+        <line num="20" count="43" type="stmt"/>
+        <line num="21" count="43" type="stmt"/>
+        <line num="22" count="43" type="stmt"/>
+        <line num="24" count="43" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="51" count="43" type="stmt"/>
+        <line num="54" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.helpers">
       <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
       <file name="selectors.js" path="/Users/jasonchen/lighthouse/scheduler/src/helpers/selectors.js">
         <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
-        <line num="2" count="8" type="stmt"/>
-        <line num="4" count="8" type="cond" truecount="4" falsecount="0"/>
-        <line num="6" count="12" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="12" count="8" type="cond" truecount="4" falsecount="0"/>
-        <line num="14" count="10" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
+        <line num="2" count="18" type="stmt"/>
+        <line num="4" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="6" count="24" type="stmt"/>
+        <line num="10" count="18" type="stmt"/>
+        <line num="12" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="22" type="stmt"/>
+        <line num="18" count="18" type="stmt"/>
       </file>
     </package>
     <package name="src.hooks">
-      <metrics statements="25" coveredstatements="15" conditionals="7" coveredconditionals="3" methods="18" coveredmethods="11"/>
+      <metrics statements="25" coveredstatements="17" conditionals="7" coveredconditionals="3" methods="18" coveredmethods="13"/>
       <file name="useApplicationData.js" path="/Users/jasonchen/lighthouse/scheduler/src/hooks/useApplicationData.js">
-        <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="5"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="57" count="3" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="7"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="57" count="13" type="stmt"/>
       </file>
       <file name="useRealtimeUpdate.js" path="/Users/jasonchen/lighthouse/scheduler/src/hooks/useRealtimeUpdate.js">
         <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
@@ -170,33 +172,33 @@
       </file>
       <file name="useVisualMode.js" path="/Users/jasonchen/lighthouse/scheduler/src/hooks/useVisualMode.js">
         <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="6" coveredmethods="6"/>
-        <line num="5" count="23" type="stmt"/>
-        <line num="7" count="23" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
+        <line num="5" count="55" type="stmt"/>
+        <line num="7" count="55" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="11" count="15" type="stmt"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="19" count="23" type="stmt"/>
+        <line num="19" count="55" type="stmt"/>
       </file>
     </package>
     <package name="src.reducers">
-      <metrics statements="15" coveredstatements="14" conditionals="10" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <metrics statements="15" coveredstatements="14" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
       <file name="application.js" path="/Users/jasonchen/lighthouse/scheduler/src/reducers/application.js">
-        <metrics statements="15" coveredstatements="14" conditionals="10" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <metrics statements="15" coveredstatements="14" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="6" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="6" count="9" type="cond" truecount="3" falsecount="1"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="43" count="1" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="3" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
       </file>
     </package>
