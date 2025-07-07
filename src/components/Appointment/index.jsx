@@ -1,9 +1,11 @@
 import "./styles.scss";
 
-import Header from "./Header";
+import Confirm from "./Confirm"
 import Empty from "./Empty";
-import Show from "./Show";
+import Error from "./Error"
 import Form from "./Form";
+import Header from "./Header";
+import Show from "./Show";
 import Status from "./Status";
 import useVisualMode from "../../hooks/useVisualMode";
 
@@ -59,32 +61,34 @@ export default function Appointment(props) {
         <Show
           student={props.interview.student}
           interviewer={props.interview.interviewer}
+          onDelete={() => transition(CONFIRM)}
+          onEdit={() => transition(EDIT)}
         />
       )}
-        {mode === EDIT && (
-    <Form
-      name={props.interview.student}
-      interviewer={props.interview.interviewer.id}
-      interviewers={props.interviewers}
-      onCancel={back}
-      onSave={save}
-    />
-  )}
-  {mode === SAVING && <Status message="Saving" />}
-  {mode === DELETING && <Status message="Deleting" />}
-  {mode === CONFIRM && (
-    <Confirm
-      message="Are you sure you would like to delete?"
-      onCancel={back}
-      onConfirm={destroy}
-    />
-  )}
-  {mode === ERROR_SAVE && (
-    <Error message="Could not book appointment." onClose={back} />
-  )}
-  {mode === ERROR_DELETE && (
-    <Error message="Could not cancel appointment." onClose={back} />
-  )}
+      {mode === EDIT && (
+        <Form
+          name={props.interview.student}
+          interviewer={props.interview.interviewer.id}
+          interviewers={props.interviewers}
+          onCancel={back}
+          onSave={save}
+        />
+      )}
+      {mode === SAVING && <Status message="Saving" />}
+      {mode === DELETING && <Status message="Deleting" />}
+      {mode === CONFIRM && (
+        <Confirm
+          message="Are you sure you would like to delete?"
+          onCancel={back}
+          onConfirm={destroy}
+        />
+      )}
+      {mode === ERROR_SAVE && (
+        <Error message="Could not book appointment." onClose={back} />
+      )}
+      {mode === ERROR_DELETE && (
+        <Error message="Could not cancel appointment." onClose={back} />
+      )}
     </article>
   );
 }
